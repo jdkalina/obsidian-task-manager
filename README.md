@@ -42,7 +42,7 @@ Logger (01 Logger.md):
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/obsidian-task-manager.git
+   git clone https://github.com/jdkalina/obsidian-task-manager.git
    cd obsidian-task-manager
    ```
 
