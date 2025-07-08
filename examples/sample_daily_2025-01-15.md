@@ -1,0 +1,13 @@
+- [ ] [[Project Alpha]]
+	- [ ] [[Research Phase]]
+		- [x] Review competitor analysis
+		- [x] Interview stakeholders
+		- [ ] Document requirements
+	- [ ] [[Development Phase]]
+		- [ ] Set up development environment
+		- [ ] Create initial prototype
+- [ ] [[Project Beta]]
+	- [x] Complete project proposal
+	- [ ] Schedule team meeting
+- [x] [[Admin Tasks]] - Update project documentation
+- [x] [[Learning]] - Complete Python tutorial chapter 5
