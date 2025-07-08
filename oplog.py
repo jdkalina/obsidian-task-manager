@@ -184,7 +184,7 @@ def main():
     daily_logs_directory = r'C:\Users\jdkal\Documents\ObsidianVault\DailyLogs'
     
     # Get all daily files
-    daily_files = get_daily_files(daily_logs_directory)
+    daily_files = get_daily_files(parent_directory)
     
     if not daily_files:
         print("No daily files found in the DailyLogs directory")
