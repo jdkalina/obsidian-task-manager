@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
+from config import get_obsidian_path
 
 def get_daily_files(daily_logs_dir):
     """Get all daily files in YYYY-MM-DD.md format from the DailyLogs directory."""
@@ -179,9 +180,9 @@ def process_daily_file(file_path):
         return {}
 
 def main():
-    # Configuration
-    parent_directory = r'C:\Users\jdkal\Documents\ObsidianVault'
-    daily_logs_directory = r'C:\Users\jdkal\Documents\ObsidianVault\DailyLogs'
+    # Configuration - Load from environment file
+    parent_directory = get_obsidian_path()
+    daily_logs_directory = parent_directory  # Assuming daily logs are in the main vault
     
     # Get all daily files
     daily_files = get_daily_files(parent_directory)

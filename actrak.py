@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
+from config import get_obsidian_path
 
 def get_latest_daily_file(daily_logs_dir):
     """Get the most recent daily file in YYYY-MM-DD.md format."""
@@ -97,8 +98,8 @@ def process_latest_daily_file(daily_logs_dir):
         print(f"Error processing file {latest_file}: {e}")
 
 def main():
-    # Configuration - Fixed to use the correct directory
-    daily_logs_directory = r'C:\Users\jdkal\Documents\ObsidianVault'
+    # Configuration - Load from environment file
+    daily_logs_directory = get_obsidian_path()
     
     # Process the latest daily file
     process_latest_daily_file(daily_logs_directory)

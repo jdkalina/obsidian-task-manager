@@ -10,6 +10,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 import sys
+from config import get_obsidian_path
 
 
 class TaskLogger:
@@ -118,8 +119,8 @@ class TaskLogger:
 
 
 def main():
-    # Configuration
-    obsidian_path = r"C:\Users\jdkal\Documents\ObsidianVault"
+    # Configuration - Load from environment file
+    obsidian_path = get_obsidian_path()
     
     # Verify obsidian directory exists
     if not os.path.exists(obsidian_path):
